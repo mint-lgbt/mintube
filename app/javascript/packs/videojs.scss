@@ -1,0 +1,213 @@
+@import "~video.js/src/css/vjs.scss";
+@import "~videojs-http-source-selector/src/plugin.scss";
+@import "~videojs-share/src/plugin.scss";
+@import "~videojs-vtt-thumbnails/src/plugin.scss";
+
+.video-js .vjs-overlay {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+}
+.video-js .vjs-overlay-no-background {
+  max-width: 33%;
+}
+.video-js .vjs-overlay-background {
+  background-color: #646464;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  padding: 10px;
+  width: 33%;
+}
+.video-js .vjs-overlay-top-left {
+  top: 5px;
+  left: 5px;
+}
+.video-js .vjs-overlay-top {
+  left: 50%;
+  margin-left: -16.5%;
+  top: 5px;
+}
+.video-js .vjs-overlay-top-right {
+  right: 5px;
+  top: 5px;
+}
+.video-js .vjs-overlay-right {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.video-js .vjs-overlay-bottom-right {
+  bottom: 3.5em;
+  right: 5px;
+}
+.video-js .vjs-overlay-bottom {
+  bottom: 3.5em;
+  left: 50%;
+  margin-left: -16.5%;
+}
+.video-js .vjs-overlay-bottom-left {
+  bottom: 3.5em;
+  left: 5px;
+}
+.video-js .vjs-overlay-left {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.video-js .vjs-overlay-center {
+  left: 50%;
+  margin-left: -16.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.video-js .vjs-no-flex .vjs-overlay-left,
+.video-js .vjs-no-flex .vjs-overlay-center,
+.video-js .vjs-no-flex .vjs-overlay-right {
+  margin-top: -15px;
+}
+.vjs-quality-selector .vjs-menu-button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.vjs-quality-selector .vjs-icon-placeholder {
+  font-family: "VideoJS";
+  font-weight: normal;
+  font-style: normal;
+}
+.vjs-quality-selector .vjs-icon-placeholder:before {
+  content: "\f110";
+}
+.vjs-quality-changing .vjs-big-play-button {
+  display: none;
+}
+.vjs-quality-changing .vjs-control-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+.__cxt-ar-annotations-container__ {
+  --annotation-close-size: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.__cxt-ar-annotation__ {
+  position: absolute;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  z-index: 20;
+  pointer-events: auto;
+}
+.__cxt-ar-annotation__ span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  pointer-events: none;
+  box-sizing: border-box;
+  padding: 2%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.__cxt-ar-annotation-close__ {
+  display: none;
+  position: absolute;
+  width: var(--annotation-close-size);
+  height: var(--annotation-close-size);
+  cursor: pointer;
+  right: calc(var(--annotation-close-size) / -1.8);
+  top: calc(var(--annotation-close-size) / -1.8);
+  z-index: 1;
+}
+.__cxt-ar-annotation__:hover:not([hidden]):not([data-ar-closed])
+  .__cxt-ar-annotation-close__ {
+  display: block;
+}
+.__cxt-ar-annotation__[hidden] {
+  display: none !important;
+}
+.__cxt-ar-annotation__[data-ar-type="highlight"] {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+}
+.__cxt-ar-annotation__[data-ar-type="highlight"]:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+.__cxt-ar-annotation__ svg {
+  pointer-events: all;
+}
+.vjs-marker {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  height: 100%;
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  z-index: 100;
+}
+.vjs-marker:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3, 1.3);
+  -moz-transform: scale(1.3, 1.3);
+  -o-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+.vjs-tip {
+  visibility: hidden;
+  display: block;
+  opacity: 0.8;
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 14px;
+  z-index: 100000;
+}
+.vjs-tip .vjs-tip-arrow {
+  background: url(data:image/gif;base64,R0lGODlhCQAJAIABAAAAAAAAACH5BAEAAAEALAAAAAAJAAkAAAIRjAOnwIrcDJxvwkplPtchVQAAOw==)
+    no-repeat top left;
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  background-position: bottom left;
+  position: absolute;
+  width: 9px;
+  height: 5px;
+}
+.vjs-tip .vjs-tip-inner {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 5px 8px 4px 8px;
+  background-color: #000;
+  color: #fff;
+  max-width: 200px;
+  text-align: center;
+}
+.vjs-break-overlay {
+  visibility: hidden;
+  position: absolute;
+  z-index: 100000;
+  top: 0;
+}
+.vjs-break-overlay .vjs-break-overlay-text {
+  padding: 9px;
+  text-align: center;
+}

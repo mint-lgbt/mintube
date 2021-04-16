@@ -1,0 +1,20 @@
+{
+  "name": "min-tube",
+  "private": true,
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.2.1",
+    "ionicons": "4",
+    "purecss": "^2.0.5",
+    "video.js": "^7.11.8",
+    "videojs-http-source-selector": "^1.1.6",
+    "videojs-share": "^3.2.1",
+    "videojs-vtt-thumbnails": "^0.0.13"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}

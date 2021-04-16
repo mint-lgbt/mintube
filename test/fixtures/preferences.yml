@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  video_loop: false
+  autoplay: false
+  play_next_automatically: false
+  proxy_videos: false
+  audio_only: false
+  speed: MyString
+  quality: MyString
+  dash_quality: MyString
+  volume: 
+  comments: MyString
+  captions: MyString
+  show_related: false
+  show_annotations: false
+  language: MyString
+  player: MyString
+  dark_mode: false
+  thin_mode: false
+  default_home: MyString
+
+two:
+  video_loop: false
+  autoplay: false
+  play_next_automatically: false
+  proxy_videos: false
+  audio_only: false
+  speed: MyString
+  quality: MyString
+  dash_quality: MyString
+  volume: 
+  comments: MyString
+  captions: MyString
+  show_related: false
+  show_annotations: false
+  language: MyString
+  player: MyString
+  dark_mode: false
+  thin_mode: false
+  default_home: MyString
