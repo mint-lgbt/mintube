@@ -34,8 +34,10 @@ ActiveRecord::Schema.define(version: 2021_04_16_164025) do
     t.boolean "dark_mode", default: true, null: false
     t.boolean "thin_mode", default: false, null: false
     t.string "default_home", default: "popular", null: false
+    t.bigint "users_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["users_id"], name: "index_preferences_on_users_id"
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -59,4 +61,5 @@ ActiveRecord::Schema.define(version: 2021_04_16_164025) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "preferences", "users", column: "users_id"
 end

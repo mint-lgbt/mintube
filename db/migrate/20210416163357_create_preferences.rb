@@ -20,6 +20,8 @@ class CreatePreferences < ActiveRecord::Migration[6.1]
       t.boolean :thin_mode, default: false, null: false
       t.string :default_home, default: 'popular', null: false
 
+      t.belongs_to :users, foreign_key: true
+
       t.timestamps
     end
   end
