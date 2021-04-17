@@ -39,3 +39,6 @@ yarn-debug.log*
 # vendor
 /vendor/*
 !/vendor/.keep
+
+# redis
+dump.rdb
