@@ -20,9 +20,9 @@ tasks:
     before: |
       redis-server &
     init: |
-      gem install bundler && script/setup
+      gem install bundler && sleep 15s && script/setup
     command: |
-      gem install bundler && script/update && script/server
+      gem install bundler && sleep 15s && script/update && script/server
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)

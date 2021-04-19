@@ -108,7 +108,7 @@ div {
 }
 
 body a.pure-button {
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 button.pure-button-primary,
@@ -501,7 +501,7 @@ video.video-js {
 .light-theme a:hover,
 .light-theme a:active,
 .light-theme summary:hover {
-  color: #075A9E !important;
+  color: #075a9e !important;
 }
 
 .light-theme a.pure-button-primary:hover {
@@ -527,8 +527,8 @@ video.video-js {
 @media (prefers-color-scheme: light) {
   .no-theme a:hover,
   .no-theme a:active,
-  .no-theme summary:hover  {
-    color: #075A9E !important;
+  .no-theme summary:hover {
+    color: #075a9e !important;
   }
 
   .no-theme a.pure-button-primary:hover {
@@ -667,18 +667,18 @@ hr {
 }
 
 #search-widget {
-    text-align: center;
-    margin: 20vh 0 50px 0;
+  text-align: center;
+  margin: 20vh 0 50px 0;
 }
 
 #logo > h1 {
-    font-size: 3.5em;
-    margin: 0;
-    padding: 0;
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 1500px) and (max-height: 1000px) {
-    #logo > h1 {
-      font-size: 10vmin;
-    }
+  #logo > h1 {
+    font-size: 10vmin;
+  }
 }

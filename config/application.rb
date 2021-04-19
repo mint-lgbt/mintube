@@ -34,5 +34,7 @@ module MinTube
     # config.eager_load_paths << Rails.root.join("extras")
 
     config.generators.stylesheets = false
+
+    config.active_record.schema_format = :sql
   end
 end

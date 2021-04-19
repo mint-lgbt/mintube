@@ -1,0 +1,17 @@
+app/helpers/**
+app/jobs/**
+app/mailers/**
+app/models/**
+app/views/**
+bin/**
+config/**
+db/**
+bin/**
+lib/**
+log/**
+public/**
+script/**
+test/fixtures/**
+tmp/**
+vendor/**
+.*

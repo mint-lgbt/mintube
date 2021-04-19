@@ -114,3 +114,5 @@ en:
     search: "search"
     preferences: "Preferences"
     curr_version: "Current version: "
+    source: "source"
+    jslicensehead: "JavaScript license information"
