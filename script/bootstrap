@@ -35,7 +35,7 @@ if [ -f "package.json" ]; then
   echo "==> Installing NPM packages…"
   bin/yarn install --silent
 else
-  echo "ERROR: Grape requires Yarn for managing JS dependencies."
+  echo "ERROR: MinTube requires Yarn for managing JS dependencies."
 fi
 
 
